@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: deviceregistrysvcapp-zbkd
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:mx1ZX-deviceregistrysvcapp-zbkd
+      - image: quay.io/redhat-appstudio/user-workload@sha256:974cb327f52b3ebe42b00457891a76bf10ac68bf1e08eb6078b11f1abd760cd1
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
