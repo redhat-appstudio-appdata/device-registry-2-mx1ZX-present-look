@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: deviceregistrysvcapp-zbkd
+  namespace: susdas-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:974cb327f52b3ebe42b00457891a76bf10ac68bf1e08eb6078b11f1abd760cd1
+        name: container-image
+        resources: {}
+status: {}
